@@ -9,7 +9,7 @@ import java.time.Duration;
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ParserBlackTest {
+public class ParserBlackTest extends Parser{
     @Rule
     public ExpectedException thrown= ExpectedException.none();
     Parser parser = new Parser();
