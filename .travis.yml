@@ -22,4 +22,4 @@ before_install:
   
 script:
 
-  - mvn test -Dtest=IntegrationTest
+  - mvn test -Dtest=ParserBlackTest
