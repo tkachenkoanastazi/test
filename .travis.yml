@@ -1,7 +1,7 @@
 install: true
 
 jdk: 
- - oraclejdk11
+ - oraclejdk8
 language: java
 cache:
   directories:
