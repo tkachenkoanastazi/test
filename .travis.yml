@@ -1,3 +1,5 @@
+
+
 install: true
 
 jdk: oraclejdk11
@@ -14,12 +16,10 @@ os:
   - linux
 
 before_install:
-  - sudo apt-get install -y tightvncserver
-  - sudo apt-get install -y expect
-  - sudo apt-get install  xfonts-base
+
 
 
   
 script:
-  - sudo chmod a+x ./execute-on-vnc.sh
-  - ./execute-on-vnc.sh mvn clean -q test
+  - mvn install -DskipTests=false
+  - mvn verify package
