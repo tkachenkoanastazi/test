@@ -5,3 +5,4 @@ cache:
     - $HOME/.m2
 script:
   - mvn clean install -DskipTests -Dmaven.test.skip=true -q -B -V | grep -v DEBUG; test ${PIPESTATUS[0]} -eq 0;
+  - mvn test
