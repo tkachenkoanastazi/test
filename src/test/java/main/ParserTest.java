@@ -80,9 +80,9 @@ public class ParserTest extends Parser{
         String expression="ma*ma";
         String str="?papa& ma*ma)+ ya";
         int result = parser.parse(expression,str);
-        assertEquals(8, result);
+        assertEquals(-1, result);
     }
-    @org.junit.Test
+    @Test
     public void quoteParse() {
         String expression="ma*ma\"";
         String str="?pa\"pa& ma*ma\")+ ya";
@@ -95,7 +95,7 @@ public class ParserTest extends Parser{
             String expression="м*м";
             String str="мама папа я";
             int result = parser.parse(expression,str);
-            assertEquals(0, result);
+            assertEquals(-1, result);
         }, () -> "Тест выполняется больше 1000 ms");
     }
     @Test

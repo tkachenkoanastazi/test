@@ -82,7 +82,7 @@ public class TestParserBlack extends Parser{
         int result = parser.parse(expression,str);
         assertEquals(8, result);
     }
-    @org.junit.Test
+    @Test
     public void quoteParse() {
         String expression="ma*ma\"";
         String str="?pa\"pa& ma*ma\")+ ya";
