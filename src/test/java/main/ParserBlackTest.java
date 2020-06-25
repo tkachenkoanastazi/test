@@ -19,7 +19,7 @@ public class ParserBlackTest extends Parser{
         String expression="mama";
         String str = "papa mama ya";
         int result = parser.parse(expression,str);
-        assertEquals(7,result);
+        assertEquals(6,result);
     }
     @Test
     public void dotString()
