@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.rules.ExpectedException;
 
 import java.time.Duration;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,7 +19,7 @@ public class ParserBlackTest extends Parser{
         String expression="mama";
         String str = "papa mama ya";
         int result = parser.parse(expression,str);
-        assertEquals(6,result);
+        assertEquals(7,result);
     }
     @Test
     public void dotString()
