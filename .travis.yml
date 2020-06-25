@@ -4,4 +4,4 @@ cache:
   directories:
     - $HOME/.m2
 script:
-  - ./execute-on-vnc.sh mvn clean -q
+  -mvn clean -q
